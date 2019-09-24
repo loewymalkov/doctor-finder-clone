@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Find me a Doctor</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Find a Doctor!</h1>
+      <form id="search">
+        <div class="card">
+          <div class="card-body">
+            <label for="symptom">What? </label>
+            <input id="symptom" type="text">
+
+            <label for="name">Who?</label>
+            <input id="name" type="text">
+
+
+            <br>
+            <label for="display-by">Display Results</label>
+            <select id="display-by" form="search">
+              <option value="full-name-asc">Full Name Ascending </option>
+              <option value="full-name-desc">Full Name Descending </option>
+              <option value="last-name-asc">Last Name Ascending </option>
+              <option value="last-name-desc">Last Name Descending </option>
+              <option value="first-name-asc">First Name Ascending </option>
+              <option value="first-name-desc">First Name Descending </option>
+              <option value="best-match-asc">Best Match ending</option>
+              <option value="best-match-desc">Best Match Descending</option>
+              <option value="rating-asc">Rating ending</option>
+              <option value="rating-desc">Rating Descending</option>
+              <option value="distance-asc">Distance ending</option>
+              <option value="distance-desc">Distance Descending</option>
+            </select>
+            
+            <button type="submit" class="btn-info" id="search-it">Find</button>
+          </div>
+        </div>
+      </form>
+      
+      <div id="error"></div>
+      <div class="card-body">
+        <ul id="show-doctor"></ul>
+      </div>
+      
+    </div>
+  </body>
+</html>
